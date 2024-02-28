@@ -1,6 +1,7 @@
 body {
   color: #2e2f32;
   font-family: Bogle, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 .header-container {
   padding: 0;
@@ -10,19 +11,18 @@ body {
   padding: 0px 40px;
   justify-items: space-between;
   align-items: center;
-  height: 156px;
   position: sticky;
   background-color: #0171dc;
-  width: 100%;
   gap: 20px;
+  height: 88px;
 }
 .header-bottom {
   box-shadow: inset;
   background-color: #f2f8fc;
-  height: 80px;
+  height: 48px;
 }
 .search-input {
-  height: 60px;
+  height: 40px;
   width: 100%;
   border-radius: 30px;
   border: 0;
