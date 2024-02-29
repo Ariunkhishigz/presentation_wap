@@ -172,6 +172,38 @@ body {
   align-items: center;
   font-size: 15px;
 }
+
+.cart-line{
+  display:flex;
+  flex-direction: row;
+ align-items:center;
+ justify-content: space-between;
+ padding-top:10px;
+ padding-right:16px;
+ padding-left:16px;
+}
+.cart-price-details{
+ color:#131313;
+ font-size:14px;
+}
+.cart-price-details-tax{
+  color:#131313;
+  font-size:14px;
+  padding-bottom:2px;
+    font-size:16px;
+  font-weight: 600;
+ }
+.cart-price-details-dark{
+  font-size:16 px;
+  font-weight: 600;
+ }
+ .member-card{
+  border-bottom: 1px solid #f1f1f2;
+  height:100px;
+  
+ }
+ 
+
 .footer {
   border-top: 1px solid #eee;
   display: flex;
@@ -199,3 +231,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
