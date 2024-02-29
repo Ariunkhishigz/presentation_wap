@@ -27,6 +27,31 @@ body {
   box-shadow: inset;
   background-color: #f2f8fc;
   height: 48px;
+  display: flex;
+  justify-content: space-around;
+  color: #0a4276;
+  align-items: center;
+}
+.header-bottom .icon-items {
+  font-weight: 800;
+  display: flex;
+  padding: 3px 8px;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.header-bottom .icon-items > label {
+  font-weight: 800;
+}
+.header-bottom .items {
+  font-weight: 400;
+}
+
+.header-bottom .icon-items:hover {
+  cursor: pointer;
+  border-color: #024f97;
+  border-radius: 20px;
 }
 .search-input {
   height: 60px;
@@ -34,6 +59,11 @@ body {
   border-radius: 30px;
   border: 0;
   padding: 0 20px;
+}
+::placeholder {
+  color: #0171dc;
+  opacity: 1; /* Firefox */
+  font-size: 16px;
 }
 .outer {
   padding: 10px 5%;
@@ -220,38 +250,7 @@ body {
   gap: 15px;
   flex-wrap: wrap;
 }
-.header-bottom {
-  display: flex;
-  justify-content: space-around;
-  color: #0a4276;
-  align-items: center;
-}
-.header-bottom .icon-items {
-  font-weight: 800;
-  display: flex;
-  padding: 3px 8px;
-  gap: 5px;
-  cursor: pointer;
-  justify-content: center;
-  border: 1px solid transparent;
-}
-.header-bottom .icon-items > label {
-  font-weight: 800;
-}
-.header-bottom .items {
-  font-weight: 400;
-}
 
-.header-bottom .icon-items:hover {
-  cursor: pointer;
-  border-color: #024f97;
-  border-radius: 20px;
-}
-::placeholder {
-  color: #0171dc;
-  opacity: 1; /* Firefox */
-  font-size: 16px;
-}
 @media (min-width: 1280px) {
   .outer {
     padding: 10px 15%;
@@ -265,10 +264,16 @@ body {
   .main {
     grid-template-columns: 1fr;
   }
+  .header-bottom .items {
+    display: none;
+  }
+  .profile,
+  .profile_pic {
+    display: none;
+  }
 }
 
-
-.member-discount{
+.member-discount {
   font-weight: 700;
   color: #0071dc;
   margin-left: 8px;
