@@ -11,19 +11,104 @@
       <div class="header">
         <!-- <i class="logo"></i> -->
         <img class="logo" src="/images/logo3.png" width="40" height="40" />
-        <input class="search-input" />
+        <div style="position: relative; width: 100%">
+          <input class="search-input" placeholder="Search Walmart" />
+          <button class="button-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" style="width: 20px; height: 20px">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </button>
+        </div>
+        <div class="cart-container">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" style="width: 25px; height: 25px">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
+          <div>
+            <label style="font-weight: 400; font-size: 14px">Hi,Ariunkhishig</label>
+            <label style="font-weight: 600; display: block">Account</label>
+          </div>
+        </div>
+        <div style="position: relative">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" style="width: 30px; height: 30px">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+          <div class="notif">4</div>
+          <label style="font-size: 14px">$7.56</label>
+        </div>
       </div>
       <div class="header-bottom"></div>
     </div>
     <div class="outer">
       <p class="cart">Cart<span class="count">(3 items)</span></p>
       <div class="main">
-        <div style="height: 200px" class="left-side">
-          <div style="display: flex; gap: 8px">
+        <div class="left-side">
+          <div style="display: flex; gap: 8px; margin-bottom: 30px">
             <img src="/images/human-hand.svg" /><label style="font-size: 20px; font-weight: 600">Pickup and delivery options</label>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 30px">
               <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
+          </div>
+          <div class="card" style="padding: 0">
+            <div class="pickup">
+              <img width="60" height="60" alt="car" src="/images/mci-pickup.svg" />
+              <div style="height: 60px; display: flex; flex-direction: column; justify-content: space-between">
+                <label style="font-size: 18px; font-weight: 600">Free pickup tomorrow, after 11am</label>
+                <div style="font-weight: 400"><a style="text-decoration: underline; cursor: pointer">Fairfield Supercenter</a> - We'll hold your order for 4 days</div>
+              </div>
+              <a style="text-decoration: underline; cursor: pointer; position: absolute; right: 20px">Change</a>
+            </div>
+            <div style="padding: 20px">
+              <p style="font-size: 20px"><b>2 items</b></p>
+              <div class="item">
+                <div class="inner">
+                  <img src="/images/mci-pickup.svg" width="50" />
+                  <div class="detail">
+                    <label>Great Value Microfiber Cleaning Towels, 2 Count, Assorted Colors</label>
+                    <a style="text-decoration: underline; cursor: pointer; color: #0171dc; font-size: 11px">Shop similar for shipping</a>
+                  </div>
+                  <label style="position: absolute; right: 10px; font-size: 16px; font-weight: 600">$2.44</label>
+                </div>
+                <div class="action">
+                  <div style="text-decoration: underline">Remove</div>
+                  <div style="text-decoration: underline">Save for later</div>
+                  <div class="buttons">
+                    <label>-</label>
+                    <b>2</b>
+                    <label>+</label>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner">
+                  <img src="/images/mci-pickup.svg" width="50" />
+                  <div class="detail">
+                    <label>Ocean's Halo, Organic Trayless Seaweed Snack, Sea Salt, Vegan, No Plastic Tray, 1pk Nori, Shelf-Stable, 0.14 oz</label>
+                    <label style="color: #2e2f32; font-size: 11px">Multipack Quantity: 1</label>
+                    <a style="text-decoration: underline; cursor: pointer; color: #0171dc; font-size: 11px">Shop similar for shipping</a>
+                  </div>
+                  <label style="position: absolute; right: 10px; font-size: 16px; font-weight: 600">$4.61</label>
+                </div>
+                <div class="action">
+                  <div style="text-decoration: underline">Remove</div>
+                  <div style="text-decoration: underline">Save for later</div>
+                  <div class="buttons">
+                    <label>-</label>
+                    <b>1</b>
+                    <label>+</label>
+                  </div>
+                </div>
+              </div>
+              <div class="total">
+                <label>Subtotal<span style="margin-left: 10px; font-weight: 600">$8.6</span></label>
+                <button class="button">Checkout</button>
+              </div>
+            </div>
           </div>
         </div>
         <div style="background-color: yellow; height: 200px" class="right-side">
@@ -35,6 +120,17 @@
             <div>Taxes</div>
             <div>Estimated Total</div>
           </div>
+        </div>
+      </div>
+      <div class="footer">
+        <label style="font-size: 11px"><span>&copy;</span>2024 Walmart. All Rights Reserved. </label>
+        <div class="inner">
+          <div>Give feedback</div>
+          <div>CA Privacy Right</div>
+          <div>Your Privacy Choices</div>
+          <div>Notice at Collection</div>
+          <div>Request My Personal Information</div>
+          <div>California's Supply Chains Act</div>
         </div>
       </div>
     </div>
